@@ -1,0 +1,80 @@
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fffefa;
+    border-bottom: 1px solid #e8dfd0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #a98545;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu a {
+    color: #39342c;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #a98545;
+}
+
+.botao-cadastro {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 18px;
+    background-color: #a98545;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.botao-cadastro:hover {
+    background-color: #896b35;
+}
+
+.icone-cadastro {
+    font-size: 19px;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        padding: 15px 4%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .botao-cadastro {
+        padding: 9px 12px;
+    }
+}
